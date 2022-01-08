@@ -1,0 +1,49 @@
+.container {
+  max-width: 1120px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.posts {
+  max-width: 720px;
+  margin: 5rem auto 0;
+
+  a {
+    display: block;
+
+    & + a {
+      padding-top: 2rem;
+      border-top: 2px solid var(--gray-700);
+      margin-top: 2rem;
+    }
+
+    time {
+      display: flex;
+      align-items: center;
+
+      font-size: 1rem;
+      color: var(--gray-300);
+    }
+
+    strong {
+      display: block;
+      margin-top: 1rem;
+
+      font-size: 1.5rem;
+      line-height: 2rem;
+
+      transition: color 0.2s;
+    }
+
+    p {
+      margin-top: 0.5rem;
+
+      color: var(--gray-300);
+      line-height: 1.625rem;
+    }
+
+    &:hover strong {
+      color: var(--yellow-500);
+    }
+  }
+}
